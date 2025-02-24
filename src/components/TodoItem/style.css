@@ -1,0 +1,62 @@
+.taskWrapper {
+  background-color: #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  word-break: break-all;
+  transition: all 0.5s ease-in-out;
+}
+
+.fade-in-out {
+  opacity: 0; /* Начальное состояние: элемент полностью прозрачный */
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards; /* Анимация появления */
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-in-out forwards; /* Анимация исчезновения */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Начальное состояние: прозрачность 0 */
+  }
+  to {
+    opacity: 1; /* Конечное состояние: прозрачность 1 */
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1; /* Начальное состояние: прозрачность 1 */
+  }
+  to {
+    opacity: 0; /* Конечное состояние: прозрачность 0 */
+  }
+}
+
+.taskHeading {
+  font-size: 27px;
+  margin-bottom: 0;
+}
+
+.taskDescription {
+  font-size: 14px;
+}
+
+.completed {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.completed input {
+  user-select: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
